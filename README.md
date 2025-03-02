@@ -24,7 +24,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  storykit: ^1.0.0  # Replace with the latest version
+  storykit: ^0.0.4  # Replace with the latest version
 ```
 
 Run this command to install the package:

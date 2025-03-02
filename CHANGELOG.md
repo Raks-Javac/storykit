@@ -21,3 +21,8 @@
 ## [0.0.3] - 2025-03-02
 ### Added
 - Add customizable postion for your status indicator
+
+
+## [0.0.4] - 2025-03-02
+### Added
+- Updated screenshot and version number
