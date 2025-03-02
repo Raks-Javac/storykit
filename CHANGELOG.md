@@ -10,3 +10,8 @@
 - External control for story index.
 - Support for background images and solid color backgrounds.
 - Callback for story index changes.
+
+
+## [0.0.2] - 2025-03-02
+### Added
+- Updated documentation
