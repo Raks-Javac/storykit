@@ -37,7 +37,74 @@ import 'package:storykit/storykit.dart';
 Here's a basic example:
 
 ```dart
-// Example code here
+
+class StoryScreen extends StatelessWidget {
+  final List<Widget> _stories = [
+    Container(
+      color: Colors.red,
+      child: const Center(
+        child: Text(
+          'Story 1',
+          style: TextStyle(color: Colors.white, fontSize: 24),
+        ),
+      ),
+    ),
+    Container(
+      color: Colors.green,
+      child: const Center(
+        child: Text(
+          'Story 2',
+          style: TextStyle(color: Colors.white, fontSize: 24),
+        ),
+      ),
+    ),
+    Container(
+      color: Colors.blue,
+      child: const Center(
+        child: Text(
+          'Story 3',
+          style: TextStyle(color: Colors.white, fontSize: 24),
+        ),
+      ),
+    ),
+    Container(
+      color: Colors.purple,
+      child: const Center(
+        child: Text(
+          'Story 4',
+          style: TextStyle(color: Colors.white, fontSize: 24),
+        ),
+      ),
+    ),
+  ];
+
+  StoryScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return StoryKit(
+      stories: _stories,
+      initialIndex: 0,
+      onIndexChange: (index) {},
+      durationPerStory: (index) {
+        // Custom duration per story if needed
+        if (index == 1) {
+          return const Duration(seconds: 7); // Story 2 lasts longer
+        }
+        return const Duration(seconds: 5);
+      },
+      progressColor: Colors.white,
+      progressBackgroundColor: Colors.grey.withOpacity(0.5),
+      backgroundImage: Image.network(
+        'https://via.placeholder.com/400x800',
+        fit: BoxFit.cover,
+      ),
+      wholeBackgroundColor: Colors.black,
+      currentIndex: 0, // Start from the first story
+    );
+  }
+}
+
 ```
 
 ## 🛠️ Customization
