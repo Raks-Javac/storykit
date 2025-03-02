@@ -65,22 +65,27 @@ class StoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: StoryKit(
-      
-        stories: _stories,
-        initialIndex: 0,
-        onIndexChange: (index) {},
-        durationPerStory: (index) {
-          // Custom duration per story if needed
-          if (index == 1) {
-            return const Duration(seconds: 7); // Story 2 lasts longer
-          }
-          return const Duration(seconds: 5);
-        },
-        progressColor: Colors.white,
-        progressBackgroundColor: Colors.grey.withOpacity(0.5),
-        wholeBackgroundColor: Colors.black,
-        currentIndex: 0, // Start from the first story
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(20),
+        child: StoryKit(
+          linePositon: LinePositon(
+            top: 30,
+          ),
+          stories: _stories,
+          initialIndex: 0,
+          onIndexChange: (index) {},
+          durationPerStory: (index) {
+            // Custom duration per story if needed
+            if (index == 1) {
+              return const Duration(seconds: 7); // Story 2 lasts longer
+            }
+            return const Duration(seconds: 5);
+          },
+          progressColor: Colors.white,
+          progressBackgroundColor: Colors.black.withOpacity(0.9),
+          wholeBackgroundColor: Colors.black,
+          currentIndex: 0, // Start from the first story
+        ),
       ),
     );
   }

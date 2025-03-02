@@ -15,3 +15,9 @@
 ## [0.0.2] - 2025-03-02
 ### Added
 - Updated documentation
+
+
+
+## [0.0.3] - 2025-03-02
+### Added
+- Add customizable postion for your status indicator

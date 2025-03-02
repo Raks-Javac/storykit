@@ -1,6 +1,6 @@
 name: storykit
 description: "A Flutter package for creating Instagram-like stories with customizable progress indicators, durations, and backgrounds."
-version: 0.0.2
+version: 0.0.3
 homepage: https://pub.dev/packages/storykit
 repository: https://github.com/Raks-Javac/storykit
 issue_tracker: https://github.com/Raks-Javac/storykit/issues
