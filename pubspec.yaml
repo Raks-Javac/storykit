@@ -4,7 +4,6 @@ version: 0.0.1
 homepage: https://pub.dev/packages/storykit
 repository: https://github.com/Raks-Javac/storykit
 issue_tracker: https://github.com/Raks-Javac/storykit/issues
-publish_to: https://pub.dev
 
 environment:
   sdk: ">=3.6.0 <4.0.0"
