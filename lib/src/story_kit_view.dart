@@ -2,6 +2,15 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+class LinePositon {
+  final double top;
+  final double left;
+  final double right;
+  final double? bottom;
+
+  LinePositon({this.top = 10, this.left = 10, this.right = 10, this.bottom});
+}
+
 class StoryKit extends StatefulWidget {
   final List<Widget> stories;
   final int initialIndex;
@@ -12,6 +21,7 @@ class StoryKit extends StatefulWidget {
   final Widget? backgroundImage;
   final Color? wholeBackgroundColor;
   final int? currentIndex; // Allow passing currentIndex externally
+  final LinePositon? linePositon;
 
   const StoryKit({
     super.key,
@@ -24,6 +34,7 @@ class StoryKit extends StatefulWidget {
     this.backgroundImage,
     this.wholeBackgroundColor,
     this.currentIndex, // Optional external currentIndex
+    this.linePositon,
   });
 
   @override
@@ -140,7 +151,7 @@ class StoryKitState extends State<StoryKit> {
                   color: widget.wholeBackgroundColor,
                 ),
                 Positioned.fill(
-                  child: widget.backgroundImage ?? SizedBox.shrink(),
+                  child: widget.backgroundImage ?? const SizedBox.shrink(),
                 ),
 
                 // Story content
@@ -157,9 +168,10 @@ class StoryKitState extends State<StoryKit> {
             // Progress indicator
 
             Positioned(
-              top: 10,
-              left: 10,
-              right: 10,
+              top: widget.linePositon?.top ?? 10,
+              left: widget.linePositon?.left ?? 10,
+              right: widget.linePositon?.right ?? 10,
+              bottom: widget.linePositon?.bottom,
               child: Row(
                 children: List.generate(widget.stories.length, (index) {
                   return Expanded(
