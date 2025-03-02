@@ -18,6 +18,10 @@ A Flutter package for creating Instagram-like stories with customizable progress
 |---|---|
 | ![Screenshot 1](./screenshots/screen_1.png) | ![Screenshot 2](./screenshots/screen_2.png) |
 
+| Screen Record |
+
+![ScreenRecord](./screenshots/screen_rec.mp4)
+
 ## 📦 Installation
 
 Add this to your package's `pubspec.yaml` file:
