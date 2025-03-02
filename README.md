@@ -145,12 +145,6 @@ Ensure that the number of stories provided matches the length of any customizati
 | `wholeBackgroundColor`        | `Color`                              | Optional. Set a solid background color.                           |
 | `currentIndex`                | `int`                                | Optional. Control the current story index programmatically.       |
 
-## 🗺️ Roadmap
-
-- [ ] Support for video stories.
-- [ ] Gesture controls for story actions.
-- [ ] Story captions and text overlay support.
-
 ## 🔗 Links
 
 - [Pub.dev](https://pub.dev/packages/storykit)
