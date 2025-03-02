@@ -11,6 +11,13 @@ A Flutter package for creating Instagram-like stories with customizable progress
 - Long press to pause and resume stories.
 - External control for story index.
 
+
+## 📸 Screenshots
+
+| Example 1 | Example 2 |
+|---|---|
+| ![Screenshot 1](![Image](https://github.com/user-attachments/assets/9b760730-f683-42c4-ab6e-58588d3a5b9e)) | ![Screenshot 2](![Image](https://github.com/user-attachments/assets/9b760730-f683-42c4-ab6e-58588d3a5b9e)) |
+
 ## 📦 Installation
 
 Add this to your package's `pubspec.yaml` file:
@@ -154,4 +161,5 @@ Ensure that the number of stories provided matches the length of any customizati
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
