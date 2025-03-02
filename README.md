@@ -16,7 +16,7 @@ A Flutter package for creating Instagram-like stories with customizable progress
 
 | Example 1 | Example 2 |
 |---|---|
-| ![Screenshot 1](./screenshots/Simulator Screenshot - iPhone 16 Pro - 2025-03-02 at 18.36.13.png) | ![Screenshot 2](https://github.com/user-attachments/assets/9b760730-f683-42c4-ab6e-58588d3a5b9e) |
+| ![Screenshot 1](./screenshots/screen_1.png) | ![Screenshot 2](./screenshots/screen_2.png) |
 
 ## 📦 Installation
 
