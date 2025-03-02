@@ -148,8 +148,8 @@ Ensure that the number of stories provided matches the length of any customizati
 ## 🔗 Links
 
 - [Pub.dev](https://pub.dev/packages/storykit)
-- [GitHub Repository](https://github.com/yourusername/storykit)
-- [Issue Tracker](https://github.com/yourusername/storykit/issues)
+- [GitHub Repository](https://github.com/Raks-Javac/storykit)
+- [Issue Tracker](https://github.com/Raks-Javac/storykit/issues)
 
 ## 📄 License
 
