@@ -23,40 +23,25 @@ class MyApp extends StatelessWidget {
 class StoryScreen extends StatelessWidget {
   final List<Widget> _stories = [
     Container(
-      color: Colors.red,
-      child: const Center(
-        child: Text(
-          'Story 1',
-          style: TextStyle(color: Colors.white, fontSize: 24),
-        ),
-      ),
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover,
+              image: NetworkImage(
+                  'https://images.pexels.com/photos/30847375/pexels-photo-30847375/free-photo-of-stylish-man-walking-along-brick-wall-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'))),
     ),
     Container(
-      color: Colors.green,
-      child: const Center(
-        child: Text(
-          'Story 2',
-          style: TextStyle(color: Colors.white, fontSize: 24),
-        ),
-      ),
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover,
+              image: NetworkImage(
+                  'https://images.pexels.com/photos/30913847/pexels-photo-30913847/free-photo-of-indoor-artistic-scene-with-calligraphy-and-cat.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load'))),
     ),
     Container(
-      color: Colors.blue,
-      child: const Center(
-        child: Text(
-          'Story 3',
-          style: TextStyle(color: Colors.white, fontSize: 24),
-        ),
-      ),
-    ),
-    Container(
-      color: Colors.purple,
-      child: const Center(
-        child: Text(
-          'Story 4',
-          style: TextStyle(color: Colors.white, fontSize: 24),
-        ),
-      ),
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover,
+              image: NetworkImage(
+                  'https://images.pexels.com/photos/30704111/pexels-photo-30704111/free-photo-of-crowds-enjoy-festival-at-vienna-city-hall.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load'))),
     ),
   ];
 
@@ -82,6 +67,7 @@ class StoryScreen extends StatelessWidget {
             return const Duration(seconds: 5);
           },
           progressColor: Colors.white,
+
           progressBackgroundColor: Colors.black.withOpacity(0.9),
           wholeBackgroundColor: Colors.black,
           currentIndex: 0, // Start from the first story
